@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="37dp"
+        android:layout_height="match_parent"
+        android:id="@+id/left">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/left2">
+
+            <Button
+                android:text="自訂模式"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/me"
+                android:layout_weight="0.08"
+                />
+
+            <Button
+                android:text="山下模式"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mont"
+                android:layout_weight="0.08" />
+
+            <Button
+                android:text="後街模式"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/behind"
+                android:layout_weight="0.08" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="26dp"
+            app:srcCompat="@drawable/r_bg"
+            android:id="@+id/imageView" />
+        <View
+            android:id="@+id/turntable"
+            android:background="@drawable/p_bg"
+            android:layout_gravity="center"
+            android:layout_width="290dp"
+            android:layout_height="290dp" />
+
+        <Button
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:text="star" />
+
+        <LinearLayout
+            android:id="@+id/left4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
